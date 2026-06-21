@@ -59,19 +59,21 @@ Scrum, Kanban, agile practices, mentoring, technical ownership, production suppo
 
 ## Featured Projects
 
+### 🧠 [cognitive-vault](https://github.com/pmfml/cognitive-vault)
+
+A backend-focused personal knowledge management project built with **Java 21**, **Spring Boot**, **PostgreSQL + pgvector**, **Elasticsearch**, **MinIO/S3**, and **Docker**.
+
+It explores how a modern backend can combine structured notes, attachments, full-text search, semantic search, local embeddings, and vector similarity to support AI-assisted knowledge retrieval.
+
+**Focus areas:** backend architecture, REST APIs, file storage, semantic search, Elasticsearch, pgvector, Spring AI, and clean layered design.
+
+---
+
 ### ✉️ [multi-channel-notification-engine](https://github.com/pmfml/multi-channel-notification-engine)
 
 A backend service built with **Java 21**, **Spring Boot 3**, **RabbitMQ**, **PostgreSQL**, and **Docker**, designed to demonstrate clean backend architecture for multi-channel notification workflows.
 
-The project explores message-driven communication, retry handling, separation of responsibilities, and extensible backend design.
-
----
-
-### 🧠 [cognitive-vault](https://github.com/pmfml/cognitive-vault)
-
-A personal knowledge and semantic search project focused on organizing and retrieving information using backend engineering and AI-assisted search concepts.
-
-The project is part of my current exploration of practical AI applications, semantic search, and LLM-assisted tools.
+The project explores message-driven communication, queue-based processing, retry handling, separation of responsibilities, and extensible backend design.
 
 ---
 
