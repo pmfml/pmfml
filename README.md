@@ -20,7 +20,7 @@ I'm open to senior backend, backend-focused full-stack, and freelance projects i
 * Refactor complex business logic
 * Integrate systems, databases, and external services
 * Improve stability, performance, and long-term code quality
-* Support full-stack applications with **Angular**, **React**, and **TypeScript**
+* Support full-stack applications with **Angular** and **React**
 * Mentor developers, review code, and help teams improve engineering practices
 
 ---
