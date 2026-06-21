@@ -39,6 +39,10 @@ TypeScript, JavaScript, Angular, React, HTML, CSS
 
 SQL, PostgreSQL, Oracle, MongoDB, Elasticsearch
 
+### Messaging & Integration
+
+RabbitMQ, REST integrations, system-to-system communication, backend workflows
+
 ### Architecture & Engineering Practices
 
 SOLID, Design Patterns, Clean Code, TDD, code reviews, legacy modernization, system integration, high-availability systems, maintainable architecture
