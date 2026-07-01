@@ -1,7 +1,5 @@
 # Hi, I'm Paulo Leite 👋
 
-**Senior Software Engineer | Backend Specialist | Java & Spring Boot**
-
 I'm a software engineer based in Recife, Brazil, with **20+ years of experience** designing, building, maintaining, and modernizing enterprise systems.
 
 My strongest background is in **Java**, **Spring Boot**, **REST APIs**, **legacy modernization**, **system integrations**, and backend applications with complex business rules. I have worked for many years on business-critical institutional systems, where reliability, maintainability, and clear technical decisions are essential.
