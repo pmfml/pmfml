@@ -4,7 +4,7 @@ I'm a software engineer based in Recife, Brazil, with **20+ years of experience*
 
 My strongest background is in **Java**, **Spring Boot**, **REST APIs**, **legacy modernization**, **system integrations**, and backend applications with complex business rules. I have worked for many years on business-critical institutional systems, where reliability, maintainability, and clear technical decisions are essential.
 
-Although my main focus is backend engineering, I also have practical full-stack experience with **Angular**, **React**, **TypeScript**, **JavaScript**, **Node.js**, and **MongoDB**, allowing me to contribute across the application when needed. Through recent personal projects I've also been deepening my experience with **event-driven architecture**, **Kafka**, **gRPC**, and **AI-assisted backend features**.
+Although my main focus is backend engineering, I also have practical full-stack experience with **Angular**, **React**, **TypeScript**, **JavaScript**, **Node.js**, and **MongoDB**, allowing me to contribute across the stack when needed. Through recent personal projects I've also been deepening my experience with **event-driven architecture**, **Kafka**, **gRPC**, and **AI-assisted backend features**.
 
 I'm open to senior backend, backend-focused full-stack, and freelance projects involving system evolution, API development, legacy modernization, integrations, and technical problem solving.
 
