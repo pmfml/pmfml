@@ -73,6 +73,8 @@ A backend service built with **Java 21**, **Spring Boot 3**, **RabbitMQ**, **Pos
 
 The project explores message-driven communication, queue-based processing, retry handling, separation of responsibilities, and extensible backend design.
 
+**Focus areas:** event-driven architecture, RabbitMQ, message-driven design, retry and failure handling, clean backend architecture.
+
 ---
 
 ### 🛒 [order-flow](https://github.com/pmfml/order-flow) 🚧 *core platform complete, final hardening in progress*
