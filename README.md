@@ -75,12 +75,12 @@ The project explores message-driven communication, queue-based processing, retry
 
 ---
 
-### 🛒 [order-flow](https://github.com/pmfml/order-flow) 🚧 *work in progress*
-A multi-tenant, event-driven order fulfillment platform delivered as SaaS, built with **Java 21**, **Spring Boot 4**, **PostgreSQL**, **MongoDB**, and **Apache Kafka** (KRaft mode). Multiple tenants use it to process orders, manage inventory, and handle payments through a choreographed Saga — each service owns its data and communicates asynchronously via domain events.
+### 🛒 [order-flow](https://github.com/pmfml/order-flow) 🚧 *core platform complete, final hardening in progress*
+A multi-tenant, event-driven order fulfillment platform delivered as SaaS, built with **Java 21**, **Spring Boot 4**, **PostgreSQL**, **MongoDB**, and **Apache Kafka** (KRaft mode). Multiple tenants use it to process orders, manage inventory, and handle payments through a choreographed Saga with idempotent consumers, each service owns its data and communicates asynchronously via domain events, all verified by 40+ passing integration tests (Testcontainers).
 
-Implemented so far: transactional outbox (no dual-write problem between PostgreSQL and Kafka), hybrid gRPC/Kafka communication, authoritative pricing via gRPC, versioned schema with Flyway, and an RFC 7807 error contract. Still on the roadmap: the full choreographed Saga across services, idempotent consumers, multi-tenancy with JWT, Redis-backed rate limiting, observability (Prometheus/Grafana), and a serverless payment-webhook receiver on AWS Lambda.
+Implemented so far: transactional outbox (no dual-write problem between PostgreSQL and Kafka), hybrid gRPC/Kafka communication with authoritative pricing via gRPC, JWT-based multi-tenant routing, versioned schema with Flyway, an RFC 7807 error contract, and a serverless payment-webhook receiver on AWS Lambda. Still in progress: Redis-backed API caching, Grafana dashboards, and a few remaining REST endpoints (order cancellation, product catalog, payment status).
 
-**Focus areas:** event-driven architecture, Kafka, gRPC, polyglot persistence, Saga pattern, multi-tenant SaaS design.
+**Focus areas:** event-driven architecture, Kafka, gRPC, polyglot persistence, Saga pattern, multi-tenant SaaS design, serverless integration.
 
 ---
 
