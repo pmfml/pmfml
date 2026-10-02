@@ -33,7 +33,7 @@ Java 7–21, Spring Boot 3 & 4, Spring Cloud, Hibernate/JPA, REST APIs, gRPC, Ma
 TypeScript, JavaScript, Angular, React, HTML, CSS
 
 ### Databases, Search & Storage
-SQL, PostgreSQL, Oracle, MongoDB, Elasticsearch, pgvector, MinIO/S3
+SQL, PostgreSQL, Oracle, MongoDB, Redis, Elasticsearch, pgvector, MinIO/S3
 
 ### Messaging & Event-Driven Architecture
 RabbitMQ, Apache Kafka, event-driven architecture, Saga pattern, transactional outbox, system-to-system communication, backend workflows
@@ -44,6 +44,9 @@ Spring AI, semantic search, local embeddings, vector similarity search
 ### Architecture & Engineering Practices
 SOLID, Design Patterns, Clean Code, TDD, code reviews, legacy modernization, system integration, microservices, high-availability systems, maintainable architecture
 
+### Security, Cloud & Observability
+OAuth2/JWT (Spring Security Resource Server), Spring Cloud Gateway, AWS Lambda, AWS SES/SNS, Micrometer, Prometheus, Grafana, distributed tracing
+
 ### Testing
 JUnit 5, Mockito, Testcontainers
 
@@ -53,7 +56,7 @@ Git, Docker, Docker Compose, Flyway, Linux, JBoss/WildFly, WebLogic, AWS foundat
 ### Ways of Working
 Scrum, Kanban, agile practices, mentoring, technical ownership, production support, collaboration with business and technical stakeholders
 
-**Currently expanding my stack with:** Redis (caching & rate limiting), OAuth2/JWT multi-tenant authentication, serverless (AWS Lambda), and observability (Prometheus/Grafana) — all part of the active `order-flow` roadmap below.
+**Recently applied in `order-flow`:** Redis (caching & per-tenant rate limiting), OAuth2/JWT multi-tenant authentication, serverless (AWS Lambda), and observability (Prometheus, Grafana, distributed tracing) — see the project below.
 
 ---
 
@@ -77,12 +80,12 @@ The project explores message-driven communication, queue-based processing, retry
 
 ---
 
-### 🛒 [order-flow](https://github.com/pmfml/order-flow) 🚧 *core platform complete, final hardening in progress*
+### 🛒 [order-flow](https://github.com/pmfml/order-flow) ✅ *core platform complete* · 🚧 *B2C storefront in progress*
 A multi-tenant, event-driven order fulfillment platform delivered as SaaS, built with **Java 21**, **Spring Boot 4**, **PostgreSQL**, **MongoDB**, and **Apache Kafka** (KRaft mode). Multiple tenants use it to process orders, manage inventory, and handle payments through a choreographed Saga with idempotent consumers, each service owns its data and communicates asynchronously via domain events, all verified by 40+ passing integration tests (Testcontainers).
 
-Implemented so far: transactional outbox (no dual-write problem between PostgreSQL and Kafka), hybrid gRPC/Kafka communication with authoritative pricing via gRPC, JWT-based multi-tenant routing, versioned schema with Flyway, an RFC 7807 error contract, and a serverless payment-webhook receiver on AWS Lambda. Still in progress: Redis-backed API caching, Grafana dashboards, and a few remaining REST endpoints (order cancellation, product catalog, payment status).
+Implemented: transactional outbox (no dual-write problem between PostgreSQL and Kafka), choreographed Saga with automatic compensation, idempotent consumers and dead letter topics, hybrid gRPC/Kafka communication with authoritative pricing via gRPC, JWT-based multi-tenancy with per-tenant Redis rate limiting and catalog caching, versioned schema with Flyway, an RFC 7807 error contract, observability with Micrometer, Prometheus, Grafana and distributed tracing, a serverless payment-webhook receiver on AWS Lambda, and a React tenant dashboard with a per-order Saga timeline. In progress: a B2C storefront (catalog, cart, checkout) integrated with the Saga.
 
-**Focus areas:** event-driven architecture, Kafka, gRPC, polyglot persistence, Saga pattern, multi-tenant SaaS design, serverless integration.
+**Focus areas:** event-driven architecture, Kafka, gRPC, polyglot persistence, Saga pattern, multi-tenant SaaS design, observability, serverless integration.
 
 ---
 
