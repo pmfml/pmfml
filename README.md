@@ -116,5 +116,5 @@ I can help companies and clients with:
 ## Connect with me
 
 - LinkedIn: [linkedin.com/in/paulomfmleite](https://www.linkedin.com/in/paulomfmleite)
-- Contra (freelance & contract work): [contra.com/seu-usuario](https://contra.com/seu-usuario)
+- Contra (freelance & contract work): [contra.com/paulo_leite_bi6ys0da](https://contra.com/paulo_leite_bi6ys0da)
 - Email: paulomarcelofml@gmail.com
